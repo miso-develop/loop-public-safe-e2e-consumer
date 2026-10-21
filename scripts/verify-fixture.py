@@ -10,7 +10,7 @@ import hashlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OWNED = {
     "PROJECT.md": "# Synthetic Consumer Project\n\nThis fixture is not a real product.\n",
-    "AGENTS.md": "# Synthetic Owner Instructions\n\nProject-owned instructions remain untouched during export adoption.\n",
+    "AGENTS.md": "# Synthetic Owner Instructions\n\nProject-owned instructions remain untouched during export adoption.\n\n## Consumer-owned customization (synthetic)\n\nPreserve this local instruction across reviewed governance export updates and rollbacks.\n",
     "SECURITY.md": "# Synthetic Security Policy\n\nNever publish private identifiers, tokens or source history.\n",
     ".verifier/verifier.config.json": '{"fixture":"consumer-owned configuration; no canonical verifier"}\n',
 }
